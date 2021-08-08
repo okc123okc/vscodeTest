@@ -1,1 +1,1 @@
-vscode¡∑œ∞
+vscode
