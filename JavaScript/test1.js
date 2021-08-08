@@ -4,7 +4,7 @@ $(function(){
 	var userData = {};
 	var url = '/bomc/data/common/iusermanager.jsp?callMethod=getUserInfo&id='+global.loginUserId;
 	$.ajax({
-		url: url,//jsp在web端的存放目录
+		url: url,//jsp鍦╳eb绔殑瀛樻斁鐩綍
 		type: 'GET',
 		dataType: 'json',
 		async:false,
@@ -21,15 +21,15 @@ $(function(){
         var tValue1 = task_audit_result.getValue();
 			console.log(tValue);
             console.log(tValue1);
-		if(tValue != "通过"){
+		if(tValue != "閫氳繃"){
 			//itsmTask.hiddenField("#auditer");
 			$("#task_execute_user").val($("#task_create_by").val());
             $("#task_execute_user").next().val($("#task_create_by").next().val());
             $("#task_execute_user").attr("disabled","true");
 			
-		}else if(tValue == "不通过"){
+		}else if(tValue == "涓嶉�氳繃"){
 			//itsmTask.showField("#auditer");
-            console.log("通过则根据选择作为下一步执行人");
+            console.log("閫氳繃鍒欐牴鎹�夋嫨浣滀负涓嬩竴姝ユ墽琛屼汉");
            $("#task_execute_user").attr("disabled","false");a
 		}
 		var next_u = $("#task_execute_user").val();
