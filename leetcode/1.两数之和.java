@@ -17,7 +17,6 @@ class Solution {
             }
         }
         return new int[] {0};
-
     }
 }
 // @lc code=end
