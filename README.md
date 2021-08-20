@@ -1,4 +1,7 @@
 # vscodeTest
 vscodeTest
-## 你好阿 
+/Java 测试
+/JavaScript js测试
+/leetcode 力扣刷题记录
+
 更新 70
